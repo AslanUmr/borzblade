@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Borzblade is the game dev profile behind Abrek, a Caucasus-inspired soulslike."
+    >
+    <title>Borzblade | Abrek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand-mark" href="#top" aria-label="Borzblade home">
+          <span class="brand-sigil">
+            <img src="assets/borzblade-logo.png" alt="" aria-hidden="true">
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Site sections">
+          <a href="#abrek" data-i18n="navGame">Abrek</a>
+          <a href="#profile" data-i18n="navProfile">Profile</a>
+          <a href="#contact" data-i18n="navSocials">Socials</a>
+        </nav>
+
+        <label class="language-picker">
+          <span data-i18n="languageLabel">Language</span>
+          <select id="languageSelect" aria-label="Language">
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+            <option value="tr">TR</option>
+          </select>
+        </label>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="heroTitle">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="heroEyebrow">Independent game developer</p>
+            <h1 id="heroTitle">
+              <span>Borzblade</span>
+            </h1>
+            <p class="game-title" data-i18n="heroGameTitle">Abrek</p>
+            <p class="hero-lede" data-i18n="heroLede">
+              A grounded fantasy soulslike inspired by the culture, architecture, aesthetics, and history of the Caucasus. No magic, no copied history: an original story set in an imaginary world.
+            </p>
+
+            <div class="hero-actions" aria-label="Primary links">
+              <a class="button button-primary" href="#abrek" data-i18n="ctaGame">Explore Abrek</a>
+              <a class="button button-secondary" href="https://borzblade.itch.io/" target="_blank" rel="noreferrer" data-i18n="ctaItch">Visit itch.io</a>
+            </div>
+
+            <div class="social-row" aria-label="Borzblade social links">
+              <a href="https://www.instagram.com/borzblade/" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm8.7 2.1a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8ZM12 7.2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm0 2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Z"/></svg>
+              </a>
+              <a href="https://www.tiktok.com/@borzblade" target="_blank" rel="noreferrer" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.2 3c.4 2.5 1.9 4.1 4.3 4.3v3.2a8 8 0 0 1-4.2-1.3v6.2A5.7 5.7 0 1 1 10.6 9.7c.3 0 .7 0 1 .1v3.4a2.4 2.4 0 1 0 1.6 2.3V3h3Z"/></svg>
+              </a>
+              <a href="https://t.me/borzblade" target="_blank" rel="noreferrer" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.7 4.3 18.5 20c-.2 1-1.1 1.2-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6 13.7 1.1 12.2c-1-.3-1-1 .2-1.5L20.4 3.3c.9-.3 1.6.2 1.3 1Z"/></svg>
+              </a>
+              <a href="https://x.com/borzblade" target="_blank" rel="noreferrer" aria-label="X">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 10.6 21.1 2h-1.8l-6.4 7.4L7.8 2H2l7.8 11.3L2 22h1.8l6.8-7.8L16 22h5.8l-8.1-11.4Zm-2.4 2.8-.8-1.1L4.3 3.3h2.6l5 7.2.8 1.1 6.6 9.3h-2.6l-5.4-7.5Z"/></svg>
+              </a>
+              <a href="https://www.youtube.com/@borzblade" target="_blank" rel="noreferrer" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.1s-.2-1.6-.9-2.3c-.8-.9-1.8-.9-2.2-1C15.4 3.6 12 3.6 12 3.6s-3.4 0-6.5.2c-.4.1-1.4.1-2.2 1-.7.7-.9 2.3-.9 2.3S2.2 9 2.2 10.9v1.8c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.8.9 1.9.8 2.4.9 1.7.1 6.3.2 6.3.2s3.4 0 6.5-.2c.4-.1 1.4-.1 2.2-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8v-1.8c0-1.8-.2-3.7-.2-3.7ZM10 14.8V8.3l5.8 3.3L10 14.8Z"/></svg>
+              </a>
+              <a href="https://borzblade.itch.io/" target="_blank" rel="noreferrer" aria-label="itch.io">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.2 4.1C5.6 3.7 8.8 3 12 3s6.4.7 7.8 1.1L21 8.6c-.4.9-1.1 1.4-2.1 1.4-1 0-1.7-.6-2.1-1.4-.4.8-1.1 1.4-2.1 1.4s-1.8-.6-2.2-1.4c-.4.8-1.2 1.4-2.2 1.4s-1.7-.6-2.1-1.4C7.8 9.4 7 10 6.1 10c-1 0-1.8-.5-2.1-1.4l1.2-4.5Zm.3 7.1c.5.3 1 .5 1.6.5.8 0 1.5-.3 2.1-.8.6.5 1.3.8 2.1.8s1.5-.3 2.1-.8c.6.5 1.4.8 2.2.8s1.5-.3 2.1-.8c.6.5 1.3.8 2.1.8.6 0 1.2-.2 1.6-.5l-.6 7.3c-.1 1.3-1.2 2.5-2.6 2.5H6.8c-1.4 0-2.5-1.2-2.6-2.5l-.7-7.3Zm5.2 2.3v4h4.6v-4H9.7Z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-label="Abrek placeholder key art">
+            <div class="mountain-card">
+              <img src="assets/abrek-poster.jpg" alt="Abrek hero poster with a Caucasus-inspired warrior and mountain towers">
+            </div>
+          </div>
+        </section>
+
+        <section id="abrek" class="section feature-section" aria-labelledby="abrekTitle">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="abrekEyebrow">Featured game</p>
+            <h2 id="abrekTitle">Abrek</h2>
+            <p data-i18n="abrekText">
+              A soulslike shaped by mountain passes, ancestral codes, hostile legends, and intimate duels where every step upward has a cost.
+            </p>
+          </div>
+
+          <div class="showcase-grid">
+            <article class="showcase-card large-card">
+              <img src="assets/gameplay-early-development.png" alt="Early development combat gameplay from Abrek">
+              <div class="showcase-caption">
+                <span data-i18n="placeholderScreenshot">Early development gameplay</span>
+                <strong data-i18n="showcaseWorld">Combat prototype</strong>
+              </div>
+            </article>
+            <article class="showcase-card environment-card">
+              <img src="assets/environment-early-development.png" alt="Early development mountain environment from Abrek">
+              <div class="showcase-caption">
+                <span data-i18n="placeholderConcept">Early development environment</span>
+                <strong data-i18n="showcaseDuel">Mountain settlements and towers</strong>
+              </div>
+            </article>
+            <article class="showcase-card boss-card">
+              <img src="assets/boss-concept-early-development.png" alt="Early development boss concept for Abrek">
+              <div class="showcase-caption">
+                <span data-i18n="placeholderGameplay">Early development boss concept</span>
+                <strong data-i18n="showcaseRitual">Boss character study</strong>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section mood-section" aria-labelledby="moodTitle">
+          <div class="section-heading compact">
+            <p class="eyebrow" data-i18n="moodEyebrow">Mood and pillars</p>
+            <h2 id="moodTitle" data-i18n="moodTitle">Grounded, demanding, and built with care</h2>
+          </div>
+
+          <div class="pillar-grid">
+            <article class="pillar">
+              <span>01</span>
+              <h3 data-i18n="pillarCombatTitle">Deliberate combat</h3>
+              <p data-i18n="pillarCombatText">Measured stamina, punishing openings, and duels that reward patience over panic.</p>
+            </article>
+            <article class="pillar">
+              <span>02</span>
+              <h3 data-i18n="pillarWorldTitle">Caucasus-inspired world</h3>
+              <p data-i18n="pillarWorldText">Stone towers, mountain roads, clan memory, and landscapes built around vertical danger.</p>
+            </article>
+            <article class="pillar">
+              <span>03</span>
+              <h3 data-i18n="pillarFolkloreTitle">Folklore pressure</h3>
+              <p data-i18n="pillarFolkloreText">Legends are treated as threats, debts, warnings, and things waiting in the dark.</p>
+            </article>
+            <article class="pillar">
+              <span>04</span>
+              <h3 data-i18n="pillarExploreTitle">Hostile exploration</h3>
+              <p data-i18n="pillarExploreText">Every path promises a shortcut, an ambush, a relic, or a story that changes the climb.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="profile" class="section profile-section" aria-labelledby="profileTitle">
+          <div>
+            <p class="eyebrow" data-i18n="profileEyebrow">Developer profile</p>
+            <h2 id="profileTitle">Borzblade</h2>
+          </div>
+          <p data-i18n="profileText">
+            Borzblade is an independent game development identity focused on atmospheric action games, grounded myth, and sharp-feeling combat. Abrek is the flagship project.
+          </p>
+        </section>
+
+        <section id="contact" class="section contact-section" aria-labelledby="contactTitle">
+          <div class="section-heading compact">
+            <p class="eyebrow" data-i18n="contactEyebrow">Follow development</p>
+            <h2 id="contactTitle" data-i18n="contactTitle">Find Borzblade here</h2>
+          </div>
+          <div class="contact-grid">
+            <a href="https://www.instagram.com/borzblade/" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://www.tiktok.com/@borzblade" target="_blank" rel="noreferrer">TikTok</a>
+            <a href="https://t.me/borzblade" target="_blank" rel="noreferrer">Telegram</a>
+            <a href="https://x.com/borzblade" target="_blank" rel="noreferrer">X</a>
+            <a href="https://www.youtube.com/@borzblade" target="_blank" rel="noreferrer">YouTube</a>
+            <a href="https://borzblade.itch.io/" target="_blank" rel="noreferrer">itch.io</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>Borzblade</span>
+        <span data-i18n="footerText">Abrek development profile</span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
