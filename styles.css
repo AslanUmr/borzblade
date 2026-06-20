@@ -501,29 +501,59 @@ h2 {
     width: min(100% - 22px, 1180px);
   }
 
+  .site-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "brand language"
+      "nav nav";
+    align-items: center;
+    gap: 8px 16px;
+    padding: 10px 0 12px;
+  }
+
+  .brand-mark {
+    grid-area: brand;
+  }
+
   .brand-sigil {
-    width: 52px;
-    height: 38px;
+    width: 46px;
+    height: 34px;
   }
 
   .brand-sigil img {
-    width: 43px;
-    height: 43px;
+    width: 40px;
+    height: 40px;
   }
 
   .nav-links {
-    gap: 14px;
+    grid-area: nav;
+    order: initial;
+    width: auto;
+    gap: 18px;
     overflow-x: auto;
-    padding-bottom: 4px;
+    padding: 0;
+    font-size: 0.82rem;
   }
 
   .language-picker {
-    width: 100%;
-    justify-content: space-between;
+    grid-area: language;
+    width: auto;
+    justify-content: flex-end;
+  }
+
+  .language-picker > span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
   }
 
   .language-picker select {
-    min-width: 92px;
+    min-width: 62px;
+    padding: 7px 8px;
   }
 
   .hero {
