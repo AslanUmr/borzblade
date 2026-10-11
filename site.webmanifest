@@ -1,15 +1,15 @@
 {
-  "name": "Borzblade | Abrek",
+  "name": "Borzblade",
   "short_name": "Borzblade",
-  "description": "The game development profile behind Abrek.",
-  "start_url": ".",
+  "description": "Independent game development studio.",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#07080a",
   "theme_color": "#07080a",
   "icons": [
     {
-      "src": "assets/borzblade-logo.png",
-      "sizes": "2048x2048",
+      "src": "/assets/optimized/borzblade-touch.png",
+      "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"
     }

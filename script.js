@@ -1,163 +1,71 @@
-const translations = {
-  en: {
-    navStudio: "Game developer",
-    navGame: "Abrek",
-    navProfile: "Profile",
-    navSocials: "Socials",
-    languageLabel: "Language",
-    heroEyebrow: "Independent game developer",
-    heroGameTitle: "Abrek",
-    heroLede:
-      "A grounded fantasy soulslike inspired by the culture, architecture, aesthetics, and history of the Caucasus. No magic, no copied history: an original story set in an imaginary world.",
-    ctaGame: "Explore Abrek",
-    ctaItch: "Visit itch.io",
-    placeholderHero: "Early development poster",
-    abrekEyebrow: "Early in development",
-    abrekText:
-      "Abrek is a large action RPG project in early development. The characters and story are fictional, while the world draws from Caucasian history, material culture, clothing, landscapes, and architecture.",
-    placeholderScreenshot: "Early development gameplay",
-    placeholderConcept: "Early development environment",
-    placeholderGameplay: "Early development boss concept",
-    showcaseWorld: "Combat prototype",
-    showcaseDuel: "Mountain settlements and towers",
-    showcaseRitual: "Boss character study",
-    moodEyebrow: "Game direction",
-    moodTitle: "Grounded, demanding, and built with care",
-    pillarCombatTitle: "Boss-driven progression",
-    pillarCombatText: "Major story chapters are unlocked by overcoming difficult bosses and learning their attack patterns.",
-    pillarWorldTitle: "No-magic fantasy",
-    pillarWorldText: "The world is imagined, but its tone stays physical, historical, and human instead of supernatural.",
-    pillarFolkloreTitle: "Caucasus-inspired identity",
-    pillarFolkloreText: "Architecture, clothing, weapons, terrain, and cultural atmosphere guide the art direction.",
-    pillarExploreTitle: "A large project",
-    pillarExploreText: "Abrek is being built as an ambitious long-term game, with development shared as the project grows.",
-    profileEyebrow: "Developer profile",
-    profileText:
-      "Borzblade is the game development profile behind Abrek, focused on grounded fantasy, disciplined combat, and a strong visual identity inspired by the Caucasus.",
-    contactEyebrow: "Follow development",
-    contactTitle: "Follow Borzblade",
-    footerText: "Abrek development profile"
-  },
-  ru: {
-    navStudio: "Разработчик игр",
-    navGame: "Abrek",
-    navProfile: "Профиль",
-    navSocials: "Соцсети",
-    languageLabel: "Язык",
-    heroEyebrow: "Независимый разработчик игр",
-    heroGameTitle: "Abrek",
-    heroLede:
-      "Приземленное фэнтези в жанре soulslike, вдохновленное культурой, архитектурой, эстетикой и историей Кавказа. Без магии и без пересказа реальной истории: это оригинальный сюжет в вымышленном мире.",
-    ctaGame: "Узнать об Abrek",
-    ctaItch: "Открыть itch.io",
-    placeholderHero: "Постер ранней разработки",
-    abrekEyebrow: "Ранняя разработка",
-    abrekText:
-      "Abrek - крупный action RPG проект на раннем этапе разработки. Персонажи и сюжет вымышлены, а мир опирается на кавказскую историю, материальную культуру, одежду, ландшафты и архитектуру.",
-    placeholderScreenshot: "Ранний этап: геймплей",
-    placeholderConcept: "Ранний этап: окружение",
-    placeholderGameplay: "Ранний этап: концепт босса",
-    showcaseWorld: "Прототип боевой системы",
-    showcaseDuel: "Горные поселения и башни",
-    showcaseRitual: "Концепт босса",
-    moodEyebrow: "Направление игры",
-    moodTitle: "Приземленно, сложно и внимательно к деталям",
-    pillarCombatTitle: "Прогресс через боссов",
-    pillarCombatText: "Ключевые главы истории открываются через победы над сложными боссами и изучение их поведения.",
-    pillarWorldTitle: "Фэнтези без магии",
-    pillarWorldText: "Мир вымышленный, но его тон остается физическим, историчным и человеческим, а не сверхъестественным.",
-    pillarFolkloreTitle: "Кавказское вдохновение",
-    pillarFolkloreText: "Архитектура, одежда, оружие, рельеф и культурная атмосфера задают художественное направление.",
-    pillarExploreTitle: "Крупный проект",
-    pillarExploreText: "Abrek создается как амбициозная долгосрочная игра, а разработка будет показываться по мере роста проекта.",
-    profileEyebrow: "Профиль разработчика",
-    profileText:
-      "Borzblade - профиль разработки игры Abrek, сосредоточенный на приземленном фэнтези, строгом бое и сильной визуальной идентичности, вдохновленной Кавказом.",
-    contactEyebrow: "Следить за разработкой",
-    contactTitle: "Следите за Borzblade",
-    footerText: "Профиль разработки Abrek"
-  },
-  tr: {
-    navStudio: "Oyun geliştirici",
-    navGame: "Abrek",
-    navProfile: "Profil",
-    navSocials: "Sosyal",
-    languageLabel: "Dil",
-    heroEyebrow: "Bağımsız oyun geliştirici",
-    heroGameTitle: "Abrek",
-    heroLede:
-      "Kafkasya'nın kültürü, mimarisi, estetiği ve tarihinden ilham alan, büyüsüz ve ayakları yere basan bir fantasy soulslike. Gerçek tarihi yeniden anlatmıyor: hayali bir dünyada geçen özgün bir hikaye.",
-    ctaGame: "Abrek'i keşfet",
-    ctaItch: "itch.io'ya git",
-    placeholderHero: "Erken geliştirme posteri",
-    abrekEyebrow: "Erken geliştirme",
-    abrekText:
-      "Abrek erken geliştirme aşamasında olan büyük bir action RPG projesi. Karakterler ve hikaye hayali; dünya ise Kafkas tarihinden, maddi kültüründen, kıyafetlerinden, manzaralarından ve mimarisinden besleniyor.",
-    placeholderScreenshot: "Erken geliştirme oynanışı",
-    placeholderConcept: "Erken geliştirme çevresi",
-    placeholderGameplay: "Erken geliştirme boss konsepti",
-    showcaseWorld: "Dövüş prototipi",
-    showcaseDuel: "Dağ yerleşimleri ve kuleler",
-    showcaseRitual: "Boss karakter çalışması",
-    moodEyebrow: "Oyun yönü",
-    moodTitle: "Gerçekçi, zorlu ve özenle inşa ediliyor",
-    pillarCombatTitle: "Boss odaklı ilerleme",
-    pillarCombatText: "Ana hikaye bölümleri, zorlu bossları yenerek ve saldırı düzenlerini öğrenerek açılır.",
-    pillarWorldTitle: "Büyüsüz fantasy",
-    pillarWorldText: "Dünya hayali, fakat tonu doğaüstü değil; fiziksel, tarihi ve insani kalıyor.",
-    pillarFolkloreTitle: "Kafkasya'dan ilham alan kimlik",
-    pillarFolkloreText: "Mimari, kıyafet, silahlar, arazi ve kültürel atmosfer sanat yönünü belirliyor.",
-    pillarExploreTitle: "Büyük bir proje",
-    pillarExploreText: "Abrek uzun vadeli ve iddialı bir oyun olarak geliştiriliyor; proje büyüdükçe süreç paylaşılacak.",
-    profileEyebrow: "Geliştirici profili",
-    profileText:
-      "Borzblade, Abrek'in arkasındaki oyun geliştirme profili; ayakları yere basan fantasy, disiplinli dövüş ve Kafkasya'dan ilham alan güçlü bir görsel kimliğe odaklanıyor.",
-    contactEyebrow: "Gelişimi takip et",
-    contactTitle: "Borzblade'i takip et",
-    footerText: "Abrek geliştirme profili"
-  }
-};
-
-const supportedLocales = Object.keys(translations);
-const languageSelect = document.querySelector("#languageSelect");
-
-function normalizeLocale(locale) {
-  if (!locale) {
-    return "en";
-  }
-
-  const lowerLocale = locale.toLowerCase();
-  return supportedLocales.find((language) => lowerLocale === language || lowerLocale.startsWith(`${language}-`)) || "en";
+document.body.classList.add('js');
+const menu = document.querySelector('.menu-toggle');
+const nav = document.querySelector('#main-nav');
+menu.hidden = false;
+function closeMenu(restore = false) {
+  nav.classList.remove('is-open'); menu.setAttribute('aria-expanded','false');
+  if (restore) menu.focus();
 }
-
-function getInitialLocale() {
-  const savedLocale = localStorage.getItem("borzblade-locale");
-  if (supportedLocales.includes(savedLocale)) {
-    return savedLocale;
-  }
-
-  const browserLocales = navigator.languages?.length ? navigator.languages : [navigator.language];
-  return browserLocales.map(normalizeLocale).find((locale) => supportedLocales.includes(locale)) || "en";
-}
-
-function applyLocale(locale) {
-  const language = supportedLocales.includes(locale) ? locale : "en";
-  const copy = translations[language];
-
-  document.documentElement.lang = language;
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const key = element.dataset.i18n;
-    if (copy[key]) {
-      element.textContent = copy[key];
-    }
-  });
-
-  languageSelect.value = language;
-  localStorage.setItem("borzblade-locale", language);
-}
-
-languageSelect.addEventListener("change", (event) => {
-  applyLocale(event.target.value);
+menu.addEventListener('click', () => {
+  const open = menu.getAttribute('aria-expanded') !== 'true';
+  nav.classList.toggle('is-open',open); menu.setAttribute('aria-expanded',String(open));
 });
-
-applyLocale(getInitialLocale());
+nav.addEventListener('click', e => {if(e.target.closest('a')) closeMenu();});
+document.addEventListener('click', e => {if (!e.target.closest('.site-header')) closeMenu();});
+document.addEventListener('keydown', e => {if(e.key === 'Escape' && nav.classList.contains('is-open')) closeMenu(true);});
+matchMedia('(min-width:1001px)').addEventListener('change', () => closeMenu());
+document.querySelectorAll('.languages a').forEach(a => a.addEventListener('click', () => {
+  try {localStorage.setItem('borzblade-locale',a.lang);} catch {}
+  if (location.hash) a.href += location.hash;
+}));
+// The URL defines the language. Never override a shared URL or redirect crawlers.
+try {localStorage.setItem('borzblade-locale',document.documentElement.lang);} catch {}
+const filters = document.querySelector('.gallery-filters');
+const grid = document.querySelector('.gallery-grid');
+const items = [...document.querySelectorAll('.gallery-item')];
+filters.hidden = false;
+filters.addEventListener('click', e => {
+  const button = e.target.closest('button');if (!button) return;
+  const category = button.dataset.filter;
+  filters.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed',String(b === button)));
+  items.forEach(item => {item.hidden = category !== 'all' && item.dataset.category !== category;});
+  grid.classList.toggle('filtered',category !== 'all');
+});
+const dialog = document.querySelector('.lightbox');
+const fullImage = document.querySelector('#lightbox-image');
+const caption = document.querySelector('#lightbox-caption');
+const counter = document.querySelector('#lightbox-count');
+let index = 0, visible = [], opener;
+function showImage() {
+  const item = visible[index];fullImage.src = item.querySelector('a').dataset.full;
+  fullImage.alt = item.querySelector('img').alt;
+  caption.textContent = [...item.querySelector('figcaption').children].map(x => x.textContent).join(' · ');
+  counter.textContent = `${index+1} / ${visible.length}`;
+}
+function advance(step) {index = (index+step+visible.length)%visible.length;showImage();}
+grid.addEventListener('click', e => {
+  const link = e.target.closest('.gallery-open');if(!link || !dialog.showModal || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+  e.preventDefault();opener = link;visible = items.filter(item => !item.hidden);index = visible.indexOf(link.closest('.gallery-item'));
+  showImage();dialog.showModal();document.body.classList.add('modal-open');
+});
+dialog.querySelector('.lightbox-close').addEventListener('click', () => dialog.close());
+dialog.querySelector('.lightbox-previous').addEventListener('click', () => advance(-1));
+dialog.querySelector('.lightbox-next').addEventListener('click', () => advance(1));
+dialog.addEventListener('keydown', e => {
+  if(e.key === 'ArrowRight'){e.preventDefault();advance(1);}
+  if(e.key === 'ArrowLeft'){e.preventDefault();advance(-1);}
+  if(e.key === 'Tab') {
+    const buttons = [...dialog.querySelectorAll('button')];
+    const first = buttons[0], last = buttons.at(-1);
+    if(e.shiftKey && document.activeElement === first) {e.preventDefault();last.focus();}
+    else if(!e.shiftKey && document.activeElement === last) {e.preventDefault();first.focus();}
+  }
+});
+dialog.addEventListener('click', e => {if(e.target === dialog){const r = dialog.getBoundingClientRect();if(e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) dialog.close();}});
+dialog.addEventListener('close', () => {document.body.classList.remove('modal-open');fullImage.removeAttribute('src');opener?.focus();});
+document.querySelectorAll('.video-load').forEach(button => button.addEventListener('click', () => {
+  if (!/^[\w-]{11}$/.test(button.dataset.video)) return;
+  const frame = document.createElement('iframe');frame.src = `https://www.youtube-nocookie.com/embed/${button.dataset.video}?autoplay=1`;
+  frame.title = button.dataset.title;frame.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';frame.allowFullscreen = true;
+  button.replaceWith(frame);frame.focus();
+}));
