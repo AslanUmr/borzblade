@@ -20,8 +20,8 @@ export const site = {
   gallery: [
     { id: 'fortress', file: 'fortress-character-early-development', original: 'png', width: 948, height: 695, category: 'world' },
     { id: 'overlook', file: 'fortress-overlook-early-development', original: 'png', width: 1843, height: 788, category: 'world' },
-    { id: 'combat', file: 'gameplay-early-development', original: 'png', width: 1462, height: 818, category: 'gameplay' },
-    { id: 'world', file: 'environment-early-development', original: 'png', width: 1677, height: 753, category: 'world' },
+    { id: 'combat', file: 'combat-current', original: 'png', width: 1455, height: 795, category: 'gameplay' },
+    { id: 'world', file: 'mountain-village-current', original: 'png', width: 1297, height: 780, category: 'world' },
     { id: 'boss', file: 'boss-concept-early-development', original: 'png', width: 512, height: 382, category: 'art' },
     { id: 'poster', file: 'abrek-poster-current', original: 'png', width: 630, height: 500, category: 'art' }
   ],
