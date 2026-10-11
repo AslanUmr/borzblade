@@ -1,7 +1,7 @@
 export const site = {
   origin: 'https://borzblade.com',
   studio: 'Borzblade',
-  hero: { id: 'hero', file: 'abrek-key-art-wide', original: 'png', width: 2700, height: 900 },
+  hero: { id: 'hero', file: 'abrek-key-art-clean', original: 'png', width: 2700, height: 900 },
   game: { name: 'Abrek', subtitle: 'Path of Honor', get title() { return `${this.name}: ${this.subtitle}`; } },
   support: [
     { name: 'Patreon', url: 'https://www.patreon.com/c/borzblade', mark: 'P' },
@@ -18,6 +18,8 @@ export const site = {
   ],
   // Genuine supplied images only. Captions/alt text are in locales.mjs.
   gallery: [
+    { id: 'fortress', file: 'fortress-character-early-development', original: 'png', width: 948, height: 695, category: 'world' },
+    { id: 'overlook', file: 'fortress-overlook-early-development', original: 'png', width: 1843, height: 788, category: 'world' },
     { id: 'combat', file: 'gameplay-early-development', original: 'png', width: 1462, height: 818, category: 'gameplay' },
     { id: 'world', file: 'environment-early-development', original: 'png', width: 1677, height: 753, category: 'world' },
     { id: 'boss', file: 'boss-concept-early-development', original: 'png', width: 512, height: 382, category: 'art' },

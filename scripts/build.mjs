@@ -11,7 +11,7 @@ const external = (url, label, cls = '') => `<a class="${cls}" href="${esc(url)}"
 function image(id, lang, cls = '', eager = false) {
   const g = site.gallery.find(g => g.id === id) || site.hero;
   const sizes = g.width > 800 ? [...new Set([480,960,1600].map(w=>Math.min(w,g.width)))] : [g.width];
-  return `<picture>${id === 'hero' ? '<source media="(max-width:700px)" type="image/webp" srcset="/assets/optimized/abrek-poster-current-630.webp">' : ''}<source type="image/webp" srcset="${sizes.map(w => `/assets/optimized/${g.file}-${w}.webp ${w}w`).join(', ')}" sizes="${id === 'hero' ? '100vw' : '(max-width: 700px) 100vw, 70vw'}"><img class="${cls}" src="/assets/${g.file}.${g.original}" alt="${esc(locales[lang].gallery[id === 'hero' ? 'poster' : id][1])}" width="${g.width}" height="${g.height}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></picture>`;
+  return `<picture>${id === 'hero' ? '<source media="(max-width:700px)" type="image/webp" srcset="/assets/optimized/abrek-key-art-clean-1600.webp">' : ''}<source type="image/webp" srcset="${sizes.map(w => `/assets/optimized/${g.file}-${w}.webp ${w}w`).join(', ')}" sizes="${id === 'hero' ? '100vw' : '(max-width: 700px) 100vw, 70vw'}"><img class="${cls}" src="/assets/${g.file}.${g.original}" alt="${esc(locales[lang].gallery[id][1])}" width="${g.width}" height="${g.height}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></picture>`;
 }
 function render(lang, game) {
   const rebrand = v => typeof v === 'string' ? v.replaceAll('Abrek: Path of Honor','{GAME_TITLE}').replaceAll('Abrek',site.game.name).replaceAll('{GAME_TITLE}',site.game.title) : Array.isArray(v) ? v.map(rebrand) : v && typeof v === 'object' ? Object.fromEntries(Object.entries(v).map(([k,val])=>[k,rebrand(val)])) : v;
@@ -66,7 +66,7 @@ ${site.verification.google ? `<meta name="google-site-verification" content="${e
       <div class="hero-support">${site.support.map(s => external(s.url, s.name)).join('<span aria-hidden="true"> / </span>')}</div>
       <a class="scroll-link" href="#abrek"><span aria-hidden="true">↓</span> ${t.scroll}</a>
     </div>
-    <div class="hero-art">${image('hero',lang,'',true)}<span class="art-label">${esc(t.gallery.poster[0])} / ${esc(t.working)}</span></div>
+    <div class="hero-art">${image('hero',lang,'',true)}<span class="art-label">${esc(t.gallery.hero[0])} / ${esc(t.working)}</span></div>
   </section>
   <div class="facts-bar"><span class="status"><i aria-hidden="true"></i>${t.status}</span>${t.facts.map(f => `<span>${esc(f)}</span>`).join('')}</div>
   <section class="section world-section" id="abrek">

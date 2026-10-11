@@ -16,7 +16,7 @@ logo.resize((96, 96), Image.Resampling.LANCZOS).save(out / 'borzblade-mark.webp'
 for size, name in [(32, 'borzblade-icon'), (180, 'borzblade-touch')]:
     logo.resize((size, size), Image.Resampling.LANCZOS).save(out / f'{name}.png')
 # Use the actual poster intact against a genuine environment crop for social previews.
-back = Image.open(assets / 'abrek-key-art-wide.png').convert('RGB')
+back = Image.open(assets / 'abrek-key-art-clean.png').convert('RGB')
 preview = ImageOps.fit(back, (1200,630), method=Image.Resampling.LANCZOS)
 poster = Image.open(assets / 'abrek-poster-current.png').convert('RGB')
 poster.thumbnail((630,630), Image.Resampling.LANCZOS)

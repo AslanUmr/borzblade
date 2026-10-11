@@ -34,6 +34,9 @@ export const locales = {
     mediaLabel: '03 / From the workshop', mediaTitle: 'A glimpse of Abrek.', mediaText: 'Actual project imagery. Early builds, evolving environments, and character studies. Everything shown is subject to change.',
     filters: { all: 'All media', gameplay: 'Gameplay', world: 'World', art: 'Artwork' },
     gallery: {
+      hero: ['Abrek key artwork', 'A warrior carrying a sword beside a mountain fortress under a purple night sky.'],
+      fortress: ['At the fortress gates', 'Early development scene showing the protagonist in a green coat beside a stone fortress and pine trees.'],
+      overlook: ['Above the fortress', 'Early development scene of the protagonist overlooking stone towers, mountains, and a narrow bridge.'],
       combat: ['Combat prototype', 'Early development gameplay showing the protagonist facing a large enemy in a stone settlement.'],
       world: ['Mountain settlements & towers', 'Early development environment with stone towers and a settlement among steep mountains.'],
       boss: ['Boss character study', 'Early boss study of an armored warrior with a fur mantle, helmet, and two blades.'],
@@ -100,6 +103,9 @@ export const locales = {
     mediaLabel: '03 / Из мастерской', mediaTitle: 'Взгляд на Abrek.', mediaText: 'Настоящие материалы проекта: ранние сборки, развивающееся окружение и образы персонажей. Всё показанное может измениться.',
     filters: { all: 'Все материалы', gameplay: 'Геймплей', world: 'Мир', art: 'Арт' },
     gallery: {
+      hero: ['Иллюстрация Abrek', 'Воин с мечом у горной крепости под фиолетовым ночным небом.'],
+      fortress: ['У ворот крепости', 'Сцена на раннем этапе разработки: герой в зелёной одежде у каменной крепости среди сосен.'],
+      overlook: ['Над крепостью', 'Сцена на раннем этапе разработки: герой смотрит на каменные башни, горы и узкий мост.'],
       combat: ['Прототип боевой системы', 'Ранний геймплей: главный герой сражается с крупным противником в каменном селении.'],
       world: ['Горные селения и башни', 'Окружение на раннем этапе разработки: каменные башни и селение среди крутых гор.'],
       boss: ['Образ босса', 'Ранний образ босса: воин в шлеме и доспехах, с меховой накидкой и двумя клинками.'],
@@ -166,6 +172,9 @@ export const locales = {
     mediaLabel: '03 / Atölyeden', mediaTitle: 'Abrek’e bir bakış.', mediaText: 'Gerçek proje görselleri. Erken sürümler, gelişen çevreler ve karakter çalışmaları. Gösterilen her şey değişebilir.',
     filters: { all: 'Tüm medya', gameplay: 'Oynanış', world: 'Dünya', art: 'Sanat' },
     gallery: {
+      hero: ['Abrek ana görseli', 'Mor gece göğünün altında, dağ kalesinin yanında kılıç taşıyan bir savaşçı.'],
+      fortress: ['Kale kapılarında', 'Erken geliştirme sahnesi: yeşil giysili kahraman, çam ağaçları arasındaki taş kalenin yanında.'],
+      overlook: ['Kalenin üzerinde', 'Erken geliştirme sahnesi: kahraman taş kulelere, dağlara ve dar bir köprüye bakıyor.'],
       combat: ['Dövüş prototipi', 'Erken geliştirme oynanışı: kahraman taş bir yerleşimde büyük bir düşmanla karşılaşıyor.'],
       world: ['Dağ yerleşimleri ve kuleler', 'Erken geliştirme çevresi: sarp dağlar arasındaki taş kuleler ve yerleşim.'],
       boss: ['Boss karakter çalışması', 'Erken boss çalışması: kürk pelerinli, miğferli ve iki bıçak taşıyan zırhlı savaşçı.'],
